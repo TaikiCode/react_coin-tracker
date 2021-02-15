@@ -36,6 +36,9 @@ ul {
   background-color: #555555;
 }
 
+.chart-price {
+  font-size: 1.3rem;
+}
 
 
 @media screen and (max-width: 768px) {
