@@ -3,11 +3,9 @@ import CoinList from '../components/CoinList'
 
 const CoinMainPage = () => {
     return (
-        <div className="coinsummary shadow border p-2 rounded m-5 bg-light">
+        <div className="coin-list mx-auto rounded">
             <CoinList />
-            
         </div>
     )
 }
-
 export default CoinMainPage

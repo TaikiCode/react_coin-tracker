@@ -35,10 +35,14 @@ const CoinList = () => {
 
   const renderCoins = () => {
     if (isLoading) {
-      return <div>読み込み中です。。。</div>;
+      return (
+        <div className="text-white m-3">
+          <h3 className="text-center">読み込み中です。。。</h3>
+        </div>
+      );
     }
     return (
-      <ul className="coinlist list-group mt-2">
+      <ul className="list-group">
         {coins.map((coin) => {
           return <Coin key={coin.id} coin={coin} />;
         })}

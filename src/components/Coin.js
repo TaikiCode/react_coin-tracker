@@ -1,17 +1,23 @@
 import React from "react";
 
 const Coin = ({ coin }) => {
+  const to_jpy = Number(coin.current_price).toLocaleString("ja-JP", {
+    style: "currency",
+    currency: "JPY",
+  });
+
+//   console.log(to_jpy);
+
   return (
-    <li className="coinlist-item list-group-item list-group-item-action d-flex justify-content-between align-items-center text-dark">
+    <li className="coinlist-item list-group-item d-flex justify-content-between align-items-center text-white mb-1 rounded">
       <img className="coinlist-image" src={coin.image} alt="" />
-      <span>{coin.name}</span>
-      <span className="text-decoration-none">¥{coin.current_price}</span>
+      <span className="coinlist-price">{to_jpy}</span>
 
       <span
         className={
           coin.price_change_percentage_24h < 0
-            ? "text-danger mr-2"
-            : "text-success mr-2"
+            ? "text-danger mr-2 coinlist-price"
+            : "text-success mr-2 coinlist-price"
         }
       >
         {" "}

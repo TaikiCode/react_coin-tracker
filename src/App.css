@@ -6,28 +6,41 @@
 }
 
 body {
-  background-color: #263238;
+  background-color: #222222;
+}
+
+.coin-list {
+  width: 60%;
+  background-color: #333333;
+  border: 0.3rem solid #333333;
 }
 
 ul {
   list-style: none;
 }
 
-.coinlist-image {
-  width: 50px;
-}
-
 .coinlist-item {
-  display: flex;
+  background-color: #222222;
 }
 
-.coinsummary {
-  border-color: white !important;
-  border-style: outset !important;
-  /* width: 80%; */
+.coinlist-image {
+  width: 10%;
 }
 
-.coin-data-category {
-  font-size: 10px;
+.coinlist-price {
+  font-size: 1rem;
 }
 
+.coinlist-item:hover {
+  background-color: #555555;
+}
+
+
+@media screen and (max-width: 768px) {
+  .coinlist-image {
+    width: 20%;
+  }
+  .coinlist-price {
+    font-size: 0.45rem;
+  }
+}
