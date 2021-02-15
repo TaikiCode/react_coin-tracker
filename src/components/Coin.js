@@ -6,11 +6,14 @@ const Coin = ({ coin }) => {
     currency: "JPY",
   });
 
-//   console.log(to_jpy);
+  //   console.log(to_jpy);
 
   return (
     <li className="coinlist-item list-group-item d-flex justify-content-between align-items-center text-white mb-1 rounded">
       <img className="coinlist-image" src={coin.image} alt="" />
+
+      <span className="coinlist-price coin-name text-light">{coin.name}</span>
+
       <span className="coinlist-price">{to_jpy}</span>
 
       <span
