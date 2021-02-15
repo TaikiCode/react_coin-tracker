@@ -67,11 +67,7 @@ const CoinDetailPage = () => {
         </div>
       );
     }
-    return (
-      <div className="coinlist">
-        <CoinChart data={coinData} />
-      </div>
-    );
+    return <CoinChart data={coinData} />;
   };
 
   return renderData();

@@ -20,12 +20,6 @@ const CoinChart = ({ data }) => {
     }
   };
 
-  //   const to_jpy = (price) => {
-  //     Number(price).toLocaleString("ja-JP", {
-  //       style: "currency",
-  //       currency: "JPY",
-  //     });
-  //   };
 
   useEffect(() => {
     if (chartRef && chartRef.current && detail) {
