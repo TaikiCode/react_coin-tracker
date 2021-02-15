@@ -1,9 +1,10 @@
 import React from 'react'
+import CoinList from '../components/CoinList'
 
 const CoinMainPage = () => {
     return (
-        <div>
-            main-page
+        <div className="coinsummary shadow border p-2 rounded m-5 bg-light">
+            <CoinList />
             
         </div>
     )

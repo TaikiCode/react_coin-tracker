@@ -12,3 +12,22 @@ body {
 ul {
   list-style: none;
 }
+
+.coinlist-image {
+  width: 50px;
+}
+
+.coinlist-item {
+  display: flex;
+}
+
+.coinsummary {
+  border-color: white !important;
+  border-style: outset !important;
+  /* width: 80%; */
+}
+
+.coin-data-category {
+  font-size: 10px;
+}
+

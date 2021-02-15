@@ -6,7 +6,7 @@ import CoinDetailPage from "./pages/CoinDetailPage";
 
 function App() {
   return (
-    <div className="container">
+    <div className="container mt-5">
       <BrowserRouter>
         <Route exact path="/" component={CoinMainPage} />
         <Route path="/coins" component={CoinDetailPage} />
