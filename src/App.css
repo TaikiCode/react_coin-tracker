@@ -46,7 +46,7 @@ ul {
     width: 15%;
   }
   .coinlist-price {
-    font-size: 0.45rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -61,7 +61,7 @@ ul {
     width: 10%;
   }
   .coinlist-price {
-    font-size: 0.2rem;
+    font-size: 1rem;
   }
 }
 
