@@ -7,7 +7,7 @@ import CoinDetailPage from "./pages/CoinDetailPage";
 function App() {
   return (
     <div className="container mt-5">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Route exact path="/" component={CoinMainPage} />
         <Route path="/coins/:id" component={CoinDetailPage} />
       </BrowserRouter>
